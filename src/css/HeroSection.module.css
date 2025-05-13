@@ -1,0 +1,192 @@
+/* HeroSection.module.css */
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(135deg, #ff8aa1, #c62750);
+  text-align: center;
+  padding: 20px;
+  min-height: 60vh;
+  position: relative; /* Щоб позиціонувати overlay абсолютно */
+  overflow: hidden; /* Щоб overlay не виходив за межі секції */
+}
+
+.title {
+  margin-top: 25x;
+  font-size: 2.5rem;
+  color: #fceff7;
+  font-family: "Pacifico", cursive;
+  font-optical-sizing: auto;
+  line-height: 1.2;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: #fde3e5;
+  margin-bottom: 20px;
+}
+
+.wishText {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+  color: #501028;
+  font-family: "Pacifico", cursive;
+  padding-left: 15px;
+  padding-right: 15px;
+  line-height: 1.5;
+}
+
+.surpriseButton {
+  margin-top: 60px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #f06292; /* Наприклад, рожевий колір */
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.surpriseButton:hover {
+  background-color: #d81b60;
+}
+
+.surpriseOverlay {
+  position: fixed; /* Фіксоване позиціонування на весь viewport */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Затемнення фону */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100; /* Забезпечує відображення поверх усього */
+}
+
+.surpriseContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white; /* Білий фон для контейнера сюрпризу */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  position: relative; /* Для абсолютно позиціонованої кнопки закриття */
+}
+
+.heart {
+  font-size: 1.5em; /* Трохи менший розмір сердечка */
+}
+
+.heartImage {
+  width: 60px; /* Ще менший розмір зображення сердечка */
+  height: auto;
+}
+
+.surpriseText {
+  margin-top: 10px;
+  font-style: italic;
+  color: #501028;
+  font-size: 1.2em;
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: #777;
+  font-size: 1.5em;
+  cursor: pointer;
+  outline: none;
+}
+
+.closeButton:hover {
+  color: #333;
+}
+
+/* Медіа-запити для більших екранів (розміри шрифтів та відступи можна залишити як є або трохи скоригувати) */
+
+@media (min-width: 768px) {
+  .section {
+    padding: 40px;
+    min-height: 80vh;
+  }
+
+  .title {
+    font-size: 4rem;
+  }
+
+  .subtitle {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+
+  .wishText {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .surpriseButton {
+    margin-top: 10px;
+    font-size: 1.2em;
+  }
+
+  .heart {
+    font-size: 2em; /* Збільшуємо на більших екранах, якщо потрібно */
+  }
+
+  .heartImage {
+    width: 80px; /* Збільшуємо на більших екранах, якщо потрібно */
+  }
+
+  .surpriseText {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section {
+    padding: 60px;
+  }
+
+  .title {
+    margin-top: 15px;
+    font-size: 5rem;
+  }
+
+  .subtitle {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+  }
+
+  .wishText {
+    font-size: 3em;
+    margin-bottom: 50px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .surpriseButton {
+    margin-top: 10px;
+    font-size: 1.5em;
+  }
+
+  .heart {
+    font-size: 2.5em; /* Збільшуємо на більших екранах, якщо потрібно */
+  }
+
+  .heartImage {
+    width: 100px; /* Збільшуємо на більших екранах, якщо потрібно */
+  }
+
+  .surpriseText {
+    font-size: 1.8em;
+  }
+}

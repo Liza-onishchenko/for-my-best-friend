@@ -1,0 +1,46 @@
+.nav {
+  position: sticky;
+  top: 0;
+  background-color: #fff0f5;
+  padding: 1rem 40px;
+
+  display: flex;
+  justify-content: space-between; /* Розташовує елементи по краях контейнера */
+  align-items: center; /* Вертикальне вирівнювання по центру */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.styledLink {
+  font-family: "Pacifico", cursive;
+  font-size: 2rem;
+  color: #d63384;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.styledLink:nth-child(2) {
+  /* Стилізуємо другий елемент (Початок дружби) для центрування */
+  margin: 0 auto; /* Автоматичні відступи зліва та справа для центрування */
+}
+
+.styledLink:hover {
+  color: #a61e4d;
+  transform: scale(1.1);
+}
+
+.styledLink::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: #d63384;
+  transition: width 0.3s ease;
+}
+
+.styledLink:hover::after {
+  width: 100%;
+}

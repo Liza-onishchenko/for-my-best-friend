@@ -1,0 +1,20 @@
+/* Footer.module.css */
+.footerContainer {
+  background-color: #fff0f5; /* ніжно-рожевий */
+  text-align: center;
+  padding: 2rem;
+  font-family: "Dancing Script", cursive;
+  color: #a61e4d;
+  font-size: 1.2rem;
+  border-top: 1px solid #f8d7da;
+}
+
+.smallText {
+  font-size: 1rem;
+  margin-top: 1rem;
+  color: #c92a2a;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}

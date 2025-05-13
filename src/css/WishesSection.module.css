@@ -1,0 +1,47 @@
+/* css/WishesSection.module.css */
+.wishesSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  text-align: center;
+}
+
+.wishText {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #501028;
+  font-family: "Monsieur La Doulaise", cursive;
+}
+
+.surpriseButton {
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #f06292; /* Наприклад, рожевий колір */
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.surpriseButton:hover {
+  background-color: #d81b60;
+}
+
+.surpriseContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.heart {
+  font-size: 2em;
+}
+
+.surpriseText {
+  margin-top: 10px;
+  font-style: italic;
+  color: #f06292;
+}
