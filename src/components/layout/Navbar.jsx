@@ -15,7 +15,7 @@ export default function Navbar() {
         Початок дружби
       </Link>
       <Link to="/adultlife" className={css.styledLink}>
-        Доросле життя
+        Дружба в дорослому житті
       </Link>
     </nav>
   );

@@ -1,17 +1,17 @@
 :root {
-  font-family: "Pacifico", cursive;
+  font-family: "Ephesis", cursive;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #ffafc1;
+  background-color: #ff8aa1;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #ffafc1;
+  background-color: #ff8aa1;
 }
 html {
   box-sizing: border-box;
@@ -37,22 +37,48 @@ body {
   place-items: center; */
   min-width: 320px;
   min-height: 100vh;
-  background-color: #ffafc1;
+  background-color: #ff8aa1;
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  font-family: "Cormorant Garamond", serif;
+}
+
+h2 {
+  font-family: "Playfair Display SC", serif;
+}
+h3 {
+  font-family: "Playfair Display SC", serif;
+  color: #c92a2a;
+}
+
+p {
+  font-family: "Pacifico", cursive;
+  color: #501028;
+  line-height: 1.7;
+}
+
+.quote {
+  font-family: "Dancing Script", cursive;
+}
+
+.signature {
+  font-family: "Ephesis", cursive;
+}
+
+.fancy-title {
+  font-family: "Corinthia", cursive;
 }
 
 button {
-  border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #de3163;
   cursor: pointer;
   transition: border-color 0.25s;
 }
@@ -67,12 +93,31 @@ button:focus-visible {
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
-    background-color: #ffffff;
+    background-color: #ff8aa1;
   }
   a:hover {
     color: #dc143c;
   }
-  button {
-    background-color: #f9f9f9;
-  }
+}
+/* Стилі для кнопки закриття - ЛИШЕ ХРЕСТИК, БЕЗ ФОНОВОГО КОЛА */
+.covers-close-button {
+  position: absolute;
+  top: 5px; /* Відступ від верхнього краю */
+  right: 5px; /* Відступ від правого краю */
+
+  font-size: 38px; /* Розмір хрестика (можна експериментувати, щоб він добре виглядав) */
+  line-height: 32px; /* Центрування хрестика по вертикалі */
+  text-align: center;
+  color: #fff; /* Білий колір хрестика */
+  background-color: transparent; /* РОБИМО ФОН ПОВНІСТЮ ПРОЗОРИМ */
+  border: none; /* ВИДАЛЯЄМО БУДЬ-ЯКІ РАМКИ */
+  border-radius: 0; /* ВИДАЛЯЄМО ЗАКРУГЛЕННЯ, ТАК ЯК НЕМАЄ КОЛА */
+  cursor: pointer;
+  z-index: 9999;
+  /* Переходи для плавності */
+  transition: color 0.3s ease, transform 0.2s ease;
+  display: flex; /* Використовуємо flexbox для точного центрування */
+  justify-content: center; /* Центруємо по горизонталі */
+  align-items: center; /* Центруємо по вертикалі */
+  box-shadow: none; /* ВИДАЛЯЄМО БУДЬ-ЯКІ ТІНІ */
 }

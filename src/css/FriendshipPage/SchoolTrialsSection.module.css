@@ -1,0 +1,54 @@
+.schoolTrialsSection {
+  padding: 40px;
+  background: url("/public/images/love_story/fon3.png"),
+    /* ваш прозорий PNG */ linear-gradient(135deg, #ff8aa1, #c62750);
+}
+.sectionTitle {
+  text-align: center;
+  font-size: 30px;
+  color: #d30333;
+}
+.textBlock {
+  margin-left: 15px;
+  font-size: 28px;
+  align-items: center;
+  line-height: 2;
+  letter-spacing: 0.05em;
+  color: #501028;
+  font-family: "Pacifico", cursive;
+}
+.galleryContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-right: 10px;
+}
+
+.galleryScroll {
+  border-radius: 10px;
+  margin: 0 10px;
+  flex-wrap: nowrap;
+  display: flex;
+  gap: 15px;
+  overflow-x: scroll;
+  scroll-behavior: auto;
+  animation: none;
+  scrollbar-width: none;
+  height: 480px; /* Замініть на потрібну фіксовану висоту */
+  align-items: flex-start; /* Вирівнюємо зображення по верхньому краю */
+}
+
+.galleryScroll::-webkit-scrollbar {
+  display: none;
+}
+.imageCard {
+  flex: 0 0 auto;
+  height: 100%;
+}
+.imageCard img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

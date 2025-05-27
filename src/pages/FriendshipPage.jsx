@@ -3,6 +3,7 @@ import EarlyYearsSection from "../components/FriendshipPage/EarlyYearsSection.js
 import SchoolTraditionsSection from "../components/FriendshipPage/SchoolTraditionsSection.jsx";
 import CommonHobbiesSection from "../components/FriendshipPage/CommonHobbiesSection.jsx";
 import SchoolTrialsSection from "../components/FriendshipPage/SchoolTrialsSection.jsx";
+import Footer from "../components/layout/Footer.jsx";
 
 function FriendshipPage() {
   return (
@@ -12,14 +13,7 @@ function FriendshipPage() {
       <SchoolTraditionsSection />
       <CommonHobbiesSection />
       <SchoolTrialsSection />
-      {/* <FriendshipCircleSection />
-      <GraduationDreamsSection />
-      <DistanceSupportSection />
-      <FirstRelationshipsSection />
-      <SharedTravelsSection />
-      <DifficultTimesSection />
-      <FunnyAdventuresSection />
-      <ForeverTogetherSection /> */}
+      <Footer />
     </div>
   );
 }

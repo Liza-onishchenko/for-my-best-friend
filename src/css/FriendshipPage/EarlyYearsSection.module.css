@@ -1,0 +1,61 @@
+.earlyYearsSection {
+  padding: 40px;
+  background: 
+    /* ваш прозорий PNG */ url("/public/images/FriendshipPage/EarlyYearsSection/fon1.png"),
+    linear-gradient(135deg, #ffc0cb, #eb0954);
+}
+.sectionTitle {
+  text-align: center;
+  font-size: 35px;
+  color: #fff;
+}
+.contentWrapper {
+  display: flex;
+  align-items: stretch; /* ключове! щоб діти були однієї висоти */
+}
+.textContainer {
+  color: #501028;
+  font-family: "Pacifico", cursive;
+  width: 40%;
+  padding-right: 40px;
+  font-weight: 150;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.galleryContainer {
+  width: 60%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-right: 10px;
+}
+
+.galleryScroll {
+  border-radius: 10px;
+  margin: 0 10px;
+  display: flex;
+  gap: 15px;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  height: 480px;
+  align-items: flex-start;
+  scroll-behavior: auto; /* Додає плавність */
+}
+
+.galleryScroll::-webkit-scrollbar {
+  display: none;
+}
+
+.imageCard {
+  flex: 0 0 auto;
+  height: 100%;
+}
+.imageCard img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

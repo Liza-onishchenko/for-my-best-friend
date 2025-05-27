@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import ReactDOM from "react-dom";
 import css from "../../css/Modal.module.css";
-
+import { IoCloseSharp } from "react-icons/io5";
 const Modal = ({ isOpen, onClose, children }) => {
   useEffect(() => {
     const handleKeyDown = (e) => {
@@ -25,7 +25,11 @@ const Modal = ({ isOpen, onClose, children }) => {
     <div className={css.modalOverlay} onClick={onClose}>
       <div className={css.modalContent} onClick={(e) => e.stopPropagation()}>
         <button className={css.closeButton} onClick={onClose}>
-          &times;
+          <IoCloseSharp
+            size={36}
+            className={css.closeButton}
+            onClick={onClose}
+          />
         </button>
         {children}
       </div>

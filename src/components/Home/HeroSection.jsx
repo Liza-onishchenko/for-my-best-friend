@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import css from "../../css/HeroSection.module.css";
-import heartImage from "../../../public/images/love_story/heart_17069339.png";
+import css from "../../css/Home/HeroSection.module.css";
+import heartImage from "../../assets/images/love_story/heart_17069339.png";
 import { FaTimes } from "react-icons/fa"; // Імпортуємо іконку хрестика
 
 export default function HeroSection() {

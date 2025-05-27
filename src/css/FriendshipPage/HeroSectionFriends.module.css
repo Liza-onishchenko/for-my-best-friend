@@ -1,0 +1,43 @@
+/* components/our-friendship/HeroSection.module.css */
+.heroSectionFriends {
+  background-color: #f8f8f8; /* Світлий фон */
+  padding: 80px 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden; /* Для обрізки фонових елементів, якщо будуть */
+  background: url("/public/images/FriendshipPage/EarlyYearsSection/fon1.png"),
+    /* ваш прозорий PNG */ linear-gradient(135deg, #ff8aa1, #eb0954);
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1; /* Щоб контент був над фоном */
+}
+
+.heroTitle {
+  font-size: 2.5em;
+  color: #fceff7;
+  margin-bottom: 20px;
+  font-family: "Playfair Display", serif;
+}
+
+.heroSubtitle {
+  font-size: 1.2em;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.heroBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3; /* Зробіть фон трохи прозорим, якщо це зображення */
+  /* Додайте стилі для фонового зображення або анімації тут */
+  /* наприклад: */
+  /* background-image: url('/images/friendship_background.jpg'); */
+  /* background-size: cover; */
+  /* background-position: center; */
+}

@@ -1,7 +1,8 @@
 // components/our-friendship/HeroSection.jsx
 import React from "react";
 import { motion } from "framer-motion";
-import css from "../../css/HeroSectionFriends.module.css"; // Створіть цей файл для стилів
+import css from "../../css/FriendshipPage/HeroSectionFriends.module.css"; // Створіть цей файл для стилів
+import Timer from "../layout/Timer.jsx";
 
 function HeroSectionFriends() {
   const titleVariants = {
@@ -40,6 +41,7 @@ function HeroSectionFriends() {
         animate="animate"
         variants={subtitleVariants}
       ></motion.div>
+      <Timer />
       {/* Фонове зображення або анімація */}
       <div className={css.heroBackground}>
         {/* Сюди можна додати зображення або анімацію */}

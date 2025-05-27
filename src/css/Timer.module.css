@@ -1,0 +1,36 @@
+/* Timer.module.css */
+.timerContainer {
+  display: flex;
+  gap: 10px;
+  background-color: #f8bbd0; /* Світло-рожевий фон */
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: fit-content;
+  box-shadow: 2px 2px 5px #e1bee7; /* Легка фіолетова тінь */
+}
+
+.timeUnit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #880e4f; /* Насичений малиновий колір цифр */
+}
+
+.timeValue {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.timeLabel {
+  font-size: 0.8rem;
+  color: #c2185b; /* Трохи світліший малиновий для підписів */
+  text-transform: uppercase;
+}
+
+.timerTitle {
+  font-size: 1.2rem;
+  color: #fceff7; /* Яскравий рожевий для заголовка */
+  text-align: center;
+  margin-bottom: 10px;
+}

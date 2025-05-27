@@ -1,9 +1,13 @@
-// components/our-friendship/SchoolTrialsSection.jsx
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
-import css from "../../css/SchoolTrialsSection.module.css"; // Створіть цей файл для стилів
-// import girlsWithSpargalki from '../../public/images/friendship/girls_with_spargalki.jpg'; // Замініть на стилізоване зображення дівчат зі шпаргалками
-// import tapeRollIcon from '../../public/images/icons/tape_roll.png'; // Зображення рулону скотчу
+import css from "../../css/FriendshipPage/SchoolTrialsSection.module.css"; // Створіть цей файл для стилів
+import broom1 from "../../assets/images/FriendshipPage/SchoolTrialsSection/1.jpg";
+import broom2 from "../../assets/images/FriendshipPage/SchoolTrialsSection/2.jpg";
+import broom3 from "../../assets/images/FriendshipPage/SchoolTrialsSection/3.jpg";
+import broom4 from "../../assets/images/FriendshipPage/SchoolTrialsSection/4.jpg";
+import broom5 from "../../assets/images/FriendshipPage/SchoolTrialsSection/5.jpg";
+import broom6 from "../../assets/images/FriendshipPage/SchoolTrialsSection/6.jpg";
+import Modal from "../layout/Modal.jsx";
 
 const SchoolTrialsSection = () => {
   const sectionVariants = {
@@ -34,6 +38,61 @@ const SchoolTrialsSection = () => {
   const tapeIconVariants = {
     hover: { rotate: 90, scale: 1.1, transition: { duration: 0.3 } },
   };
+  const photos = [
+    { src: broom4 },
+    { src: broom1 },
+    { src: broom2 },
+    { src: broom3 },
+    { src: broom5 },
+    { src: broom6 },
+  ];
+  const loopedPhotos = [...photos, ...photos];
+  const [activeImage, setActiveImage] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false); // Стан для видимості модального вікна
+  const scrollRef = useRef(null);
+
+  const openModal = (photo) => {
+    setActiveImage(photo);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setActiveImage(null);
+  };
+
+  const scrollManually = (direction) => {
+    const container = scrollRef.current;
+    if (container) {
+      const amount = container.offsetWidth * 0.8;
+      container.scrollLeft += direction * amount;
+    }
+  };
+
+  useEffect(() => {
+    const scrollContainer = scrollRef.current;
+    if (!scrollContainer) return;
+
+    let speed = 1;
+    let rafId;
+
+    const scroll = () => {
+      scrollContainer.scrollLeft += speed;
+
+      const scrollWidth = scrollContainer.scrollWidth / 2;
+
+      // Якщо дійшли до кінця першого блоку (до середини)
+      if (scrollContainer.scrollLeft >= scrollWidth) {
+        // Миттєво перемотуємо назад на початок
+        scrollContainer.scrollLeft -= scrollWidth;
+      }
+
+      rafId = requestAnimationFrame(scroll);
+    };
+
+    rafId = requestAnimationFrame(scroll);
+    return () => cancelAnimationFrame(rafId);
+  }, []);
 
   return (
     <section className={css.schoolTrialsSection}>
@@ -43,7 +102,7 @@ const SchoolTrialsSection = () => {
         initial="initial"
         whileInView="animate"
       >
-        ДПА в рідному 16-му: коли скотч склеїв не лише папір, а й нашу надію
+        Наш 16-й кабінет, шкільні події, випускний
       </motion.h2>
 
       <motion.div
@@ -54,44 +113,41 @@ const SchoolTrialsSection = () => {
       >
         <motion.div className={css.textBlock} variants={textVariants}>
           <p>
-            Наш улюблений 16-й кабінет того дня здавався не таким вже й затишним
-            – тут вершилася доля наших перших серйозних іспитів, ДПА. І ми,
-            звісно, підійшли до справи з усією серйозністю (у нашому розумінні
-            цього слова!). Наташа виявила чудеса друкарської майстерності,
-            роздрукувавши справжнісінькі 'кілометри' шпаргалок, які ми потім
-            старанно склеювали скотчем, сподіваючись, що ці паперові змії
-            стануть нашою рятівною соломинкою.
-            <motion.img
-              //   src={tapeRollIcon}
-              alt="Іконка рулону скотчу"
-              className={css.tapeIcon}
-              variants={tapeIconVariants}
-              whileHover="hover"
-            />
+            Він був не просто класом — це була наша фортеця. Саме тут ми писали
+            наше ДПА з метровими шпаргалками.
           </p>
           <p>
-            Сам процес іспиту перетворився на справжній екстрим – кожен похід до
-            вбиральні ставав секретною місією з пошуку потрібної відповіді, а
-            кожен вихід вчителя з класу викликав бурю надії. Чи допомогли ті
-            шпаргалки? 50 на 50, як то кажуть. Але головне – ми були в цьому
-            разом, об'єднані спільною метою вижити в цій нелегкій битві за
-            знання.
+            А пам’ятаєш, як хлопці запускали пітарди прямо в класі? І фотосесії
+            в «пристройці» — легендарні! І, звісно, ті відоси, які ми знімали…
+            компромат страшної сили 😄 Ще чергування в їдальні… не найгірше,
+            правда ж? Наша любима Наталья Олексіївна, яка змушувала знімати лак
+            цвяхом прямо на уроці? А походи в туалет усім гуртом? Саме там, до
+            речі, я дізналася про той самий твій секрет… якщо ти ще пам’ятаєш 😉
           </p>
         </motion.div>
-        <motion.div
-          className={css.imageBlock}
-          variants={imageVariants}
-          whileHover="hover"
-        >
-          <img
-            // src={girlsWithSpargalki}
-            alt="Дівчата зі шпаргалками"
-            className={css.trialImage}
-          />
-          <div className={css.imageCaption}>
-            Наші секретні "кілометри" знань
+        <div className={css.galleryContainer}>
+          <div className={css.galleryScroll} ref={scrollRef}>
+            {loopedPhotos.map((photo, i) => (
+              <div
+                key={i}
+                className={css.imageCard}
+                onClick={() => openModal(photo)}
+              >
+                <img src={photo.src} alt={photo.caption} />
+              </div>
+            ))}
           </div>
-        </motion.div>
+        </div>
+
+        {/* Рендеримо компонент Modal */}
+        <Modal isOpen={isModalOpen} onClose={closeModal}>
+          {activeImage && (
+            <>
+              <img src={activeImage.src} alt="Повне зображення" />
+              <p>{activeImage.caption}</p>
+            </>
+          )}
+        </Modal>
       </motion.div>
     </section>
   );

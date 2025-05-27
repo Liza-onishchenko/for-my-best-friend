@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
-import css from "../../css/HoverSlider.module.css";
+import css from "../../css/Home/HoverSlider.module.css";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const HoverSlider = ({ images, onImageClick }) => {

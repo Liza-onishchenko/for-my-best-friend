@@ -1,0 +1,102 @@
+/* HeroYouth.module.css */
+
+.heroYouthSection {
+  padding: 0;
+  height: 620px;
+  overflow: hidden;
+  position: relative;
+  background: url(/public/images/AdultLife/fon2.png),
+    /* ваш прозорий PNG */ linear-gradient(135deg, #ff8aa1, #eb0954);
+}
+
+.galleryGrid {
+  position: relative;
+  width: 100%;
+  display: flex;
+  margin-top: -100px;
+  flex-direction: column;
+  transform: rotate(-5deg);
+}
+
+.imageRow {
+  display: flex;
+  flex-wrap: nowrap; /* Зображення завжди в один рядок */
+  gap: 50px; /* Відстань між картками */
+  padding: 10px 0; /* Відступ зверху/знизу для карток */
+  transform-origin: center center;
+  animation-duration: 60s; /* Тривалість анімації (можна налаштувати) */
+  animation-timing-function: linear; /* Лінійна для безперервності */
+  animation-iteration-count: infinite; /* Безперервно */
+}
+
+/* Класи для напрямку анімації, які додаються в JSX */
+.rowRight {
+  animation-name: slideRight;
+}
+
+.rowLeft {
+  animation-name: slideLeft;
+}
+
+.imageCard {
+  width: 450px;
+  height: 314px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  flex-shrink: 0;
+  animation-duration: 15s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.imageCard:hover,
+.imageCard:focus {
+  box-shadow: 10 20px #f5002d;
+  border: 1px solid #f5002d;
+  transform: scale(1.1);
+}
+
+.imageCard img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Заповнення картки зображенням */
+  display: block;
+}
+.imageCard:hover,
+.imageCard:focus {
+  box-shadow: 0 0 20px #f5002d;
+  border: 1px solid #f5002d;
+}
+/* Keyframes для анімації */
+/* Зверніть увагу: ці анімації тепер переміщують вміст контейнера, а не сам контейнер,
+     щоб не порушувати його рівне розташування. */
+@keyframes slideRight {
+  from {
+    transform: translateX(calc(-100% + 100vw));
+  } /* Починаємо праворуч за екраном, з урахуванням ширини в'юпорту */
+  to {
+    transform: translateX(-100%);
+  } /* Рухаємо вліво на всю ширину вмісту */
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(-100%);
+  } /* Починаємо зліва, щоб бачити дубльований вміст */
+  to {
+    transform: translateX(calc(-100% + 100vw));
+  } /* Рухаємо вправо до кінця вмісту */
+}
+
+/* Стилі basicLightbox - це HTML-рядок, що передається в .create() */
+.coversFullImage {
+  display: block;
+  max-width: 90vw; /* Максимальна ширина 90% від ширини в'юпорту */
+  max-height: 80vh; /* Максимальна висота 80% від висоти в'юпорту */
+  border-radius: 8px;
+  margin: 0 auto;
+}
