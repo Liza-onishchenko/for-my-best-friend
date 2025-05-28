@@ -2,12 +2,12 @@ import React, { useEffect, useRef } from "react";
 import css from "../../css/AdultLife/FriendshipDistance.module.css";
 import * as basicLightbox from "basiclightbox";
 import "basiclightbox/dist/basicLightbox.min.css";
-import img4_PNG from "../../assets/images/FriendshipDistance/4.PNG"; // Змінено на img_4_PNG для уникнення конфліктів та відображення розширення
+import img4_PNG from "../../assets/images/FriendshipDistance/4.jpg"; // Змінено на img_4_PNG для уникнення конфліктів та відображення розширення
 import img1_jpg from "../../assets/images/FriendshipDistance/1.jpg";
 import img2_jpg from "../../assets/images/FriendshipDistance/2.jpg";
-import img3_PNG from "../../assets/images/FriendshipDistance/3.PNG";
-import img5_PNG from "../../assets/images/FriendshipDistance/5.PNG";
-import img6_PNG from "../../assets/images/FriendshipDistance/6.PNG";
+import img3_PNG from "../../assets/images/FriendshipDistance/3.jpg";
+import img5_PNG from "../../assets/images/FriendshipDistance/5.jpg";
+import img6_PNG from "../../assets/images/FriendshipDistance/6.jpg";
 import img7_jpg from "../../assets/images/FriendshipDistance/7.jpg";
 
 function FriendshipDistance() {
@@ -68,14 +68,14 @@ function FriendshipDistance() {
         <div className={css.textContainer}>
           <p>
             Кожен з нас почав жити своїм дорослим життям. Ми ходили на пари,
-            гризли граніт науки, святкували твій День народження, намагались
+            гризли граніт науки, святкували твій День народження 🥂, намагались
             підтримувати зв'язок. Але, визнаймо, спочатку всі трохи загубились у
             вихорі нових подій, обов'язків та знайомств. Це був час, коли наша
             дружба вчилася дихати на відстані, чекаючи нагоди знову зійтися.
           </p>
           <p>
             Але ми не здалися! Потроху, крок за кроком, ми відновили наш
-            зв'язок. Святкували День народження, відчували, як ниточка нашої
+            зв'язок. Святкували День народження 🎉, відчували, як ниточка нашої
             дружби стає міцнішою.
           </p>
         </div>

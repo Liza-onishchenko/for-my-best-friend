@@ -1,20 +1,24 @@
 /* Footer.module.css */
 .footerContainer {
-  background-color: #ffc0cb; /* ніжно-рожевий */
+  background-color: #ff3d75;
   text-align: center;
   padding: 2rem;
   font-family: "Dancing Script", cursive;
-  color: #a61e4d;
   font-size: 1.2rem;
+  background: url("../../assets/images/love_story/fon2.png"), color #ff3d75;
   border-top: 1px solid #f8d7da;
 }
 
 .smallText {
   font-size: 1rem;
   margin-top: 1rem;
-  color: #c92a2a;
+  color: #f8d7da;
 }
 .container {
   display: flex;
   flex-direction: column;
+}
+
+.instagramLink {
+  color: #f8d7da;
 }

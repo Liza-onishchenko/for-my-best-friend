@@ -5,7 +5,7 @@
   height: 620px;
   overflow: hidden;
   position: relative;
-  background: url(/public/images/AdultLife/fon2.png),
+  background: url(../../assets/images/AdultLife/fon2.png),
     /* ваш прозорий PNG */ linear-gradient(135deg, #ff8aa1, #eb0954);
 }
 

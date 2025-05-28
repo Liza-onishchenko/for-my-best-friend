@@ -1,7 +1,7 @@
 .nav {
   position: sticky;
   top: 0;
-  background-color: #ffd1dc;
+  background-color: #ffc7d7;
   padding: 1rem 40px;
   display: flex;
   justify-content: space-between; /* Розташовує елементи по краях контейнера */

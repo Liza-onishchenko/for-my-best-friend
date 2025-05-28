@@ -37,7 +37,7 @@ body {
   place-items: center; */
   min-width: 320px;
   min-height: 100vh;
-  background-color: #ff8aa1;
+  background: linear-gradient(135deg, #ff8aa1, #ff618e);
 }
 
 h1 {
@@ -58,6 +58,8 @@ p {
   font-family: "Pacifico", cursive;
   color: #501028;
   line-height: 1.7;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .quote {

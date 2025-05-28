@@ -1,0 +1,66 @@
+.AcquaintanceSection {
+  padding: 40px;
+  background: url("../../assets/images/love_story/fon3.png"),
+    /* ваш прозорий PNG */ linear-gradient(135deg, #ff5283, #eb0954);
+}
+.sectionTitle {
+  text-align: center;
+  font-size: 45px;
+  color: #501028;
+}
+.contentWrapper {
+  display: flex;
+  align-items: stretch; /* ключове! щоб діти були однієї висоти */
+}
+.textContainer {
+  color: #501028;
+  font-family: "Pacifico", cursive;
+  width: 40%;
+  padding-right: 40px;
+  font-weight: 150;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.galleryContainer {
+  width: 60%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  /* height: 100%; */
+  margin-right: 10px;
+}
+
+.galleryScroll {
+  border-radius: 10px;
+  margin: 0 10px;
+  display: flex;
+  gap: 15px;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  height: 800px;
+  align-items: flex-start;
+  scroll-behavior: auto; /* Додає плавність */
+}
+
+.galleryScroll::-webkit-scrollbar {
+  display: none;
+}
+
+.imageCard {
+  flex: 0 0 auto;
+  height: 100%;
+}
+.imageCard img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.wedding {
+  margin: 40px;
+  text-align: center;
+  font-size: 40px;
+  color: #66001d;
+}

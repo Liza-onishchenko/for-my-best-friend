@@ -1,11 +1,8 @@
 import React, { useRef, useEffect } from "react";
 import * as basicLightbox from "basiclightbox";
 import "basiclightbox/dist/basicLightbox.min.css";
-import css from "../../css/AdultLife/HeroYouth.module.css"; // Імпортуємо оновлені стилі
+import css from "../../css/AdultLife/HeroYouth.module.css";
 
-// Імпортуйте всі зображення, які ви хочете використовувати.
-// Для безперервного скролу краще мати багато зображень або дублювати їх.
-// Приклад:
 import img1 from "../../assets/images/AdultLife/1.jpg";
 import img2 from "../../assets/images/AdultLife/2.jpg";
 import img3 from "../../assets/images/AdultLife/3.jpg";

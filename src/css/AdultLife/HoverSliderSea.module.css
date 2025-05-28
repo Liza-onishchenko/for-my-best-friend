@@ -1,0 +1,80 @@
+.hoverSliderSeaContainer {
+  position: relative;
+  width: 100%;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.hoverSlider {
+  overflow: hidden;
+  width: 100%;
+}
+
+.sliderTrack {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 12px;
+  overflow-x: auto;
+  scroll-behavior: auto;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-x;
+  cursor: grab;
+
+  transition: transform 0.5s ease-in-out;
+}
+
+.sliderTrack:active {
+  cursor: grabbing;
+}
+.sliderImage {
+  flex-shrink: 0;
+  width: 100%;
+  height: 600px; /* або бажана висота */
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.dots {
+  display: flex;
+  gap: 5px;
+  color: #d81b60;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #ccc;
+  cursor: pointer;
+  color: #d81b60;
+}
+
+.activeDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #d81b60;
+}
+
+.prevButton,
+.nextButton {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  padding: 5px;
+  color: #d81b60;
+}
+
+.prevButton:hover,
+.nextButton:hover {
+  color: #fde3e5;
+}

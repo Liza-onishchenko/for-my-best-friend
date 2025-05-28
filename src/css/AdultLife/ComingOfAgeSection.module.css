@@ -3,15 +3,16 @@
 .comingOfAgeSection {
   padding: 40px;
   text-align: center;
-  background: url("/images/love_story/fon3.png") center/cover no-repeat,
-    linear-gradient(135deg, #ff8aa1, #c62750);
+  background: url("../../assets/images/love_story/fon3.png") center/cover
+      no-repeat,
+    linear-gradient(135deg, #ff8aa1, #eb0954);
   background-blend-mode: overlay;
 }
 
 .sectionTitle {
   font-size: 2em;
   margin-bottom: 30px;
-  color: #c41e3a;
+  color: #fdfdfd;
 }
 
 .timeline {

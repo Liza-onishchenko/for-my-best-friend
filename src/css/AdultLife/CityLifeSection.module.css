@@ -1,7 +1,7 @@
 .cityLifeSectionSection {
   padding: 40px 40px;
-  background: url("/public/images/love_story/fon3.png"),
-    /* ваш прозорий PNG */ linear-gradient(135deg, #ff8aa1, #eb0954);
+  background: url("../../assets/images/love_story/fon3.png"),
+    /* ваш прозорий PNG */ linear-gradient(135deg, #ff5283, #eb0954);
   overflow: hidden;
   display: flex;
   flex-direction: column;

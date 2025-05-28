@@ -1,7 +1,6 @@
 .friendshipDistanceSection {
   padding: 40px;
-  background: 
-      /* ваш прозорий PNG */ url("/public/images/FriendshipPage/EarlyYearsSection/fon1.png"),
+  background: url("../../assets/images/love_story/fon2.png"),
     linear-gradient(135deg, #ffc0cb, #eb0954);
 }
 .sectionTitle {

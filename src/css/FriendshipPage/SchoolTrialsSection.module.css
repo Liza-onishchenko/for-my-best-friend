@@ -1,12 +1,12 @@
 .schoolTrialsSection {
   padding: 40px;
-  background: url("/public/images/love_story/fon3.png"),
-    /* ваш прозорий PNG */ linear-gradient(135deg, #ff8aa1, #c62750);
+  background: url("../../assets/images/love_story/fon3.png"),
+    /* ваш прозорий PNG */ linear-gradient(135deg, #ff5283, #eb0954);
 }
 .sectionTitle {
   text-align: center;
   font-size: 30px;
-  color: #d30333;
+  color: #f8f8f8;
 }
 .textBlock {
   margin-left: 15px;

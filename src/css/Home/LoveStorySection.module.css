@@ -2,8 +2,8 @@
 .loveStorySection {
   padding: 40px;
   text-align: center;
-  background: url("/public/images/love_story/fon3.png"),
-    /* ваш прозорий PNG */ linear-gradient(135deg, #ff8aa1, #c62750);
+  background: url("../../assets/images/love_story/fon3.png"),
+    /* ваш прозорий PNG */ linear-gradient(135deg, #ff5283, #eb0954);
 }
 
 .sectionTitle {

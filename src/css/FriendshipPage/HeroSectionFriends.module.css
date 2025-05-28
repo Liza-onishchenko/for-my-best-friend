@@ -5,7 +5,7 @@
   text-align: center;
   position: relative;
   overflow: hidden; /* Для обрізки фонових елементів, якщо будуть */
-  background: url("/public/images/FriendshipPage/EarlyYearsSection/fon1.png"),
+  background: url("../../assets/images/FriendshipPage/EarlyYearsSection/fon1.png"),
     /* ваш прозорий PNG */ linear-gradient(135deg, #ff8aa1, #eb0954);
 }
 
