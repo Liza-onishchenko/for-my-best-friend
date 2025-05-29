@@ -32,7 +32,7 @@ import image23 from "../../assets/images/CityLifeSection/23.jpg";
 import image24 from "../../assets/images/CityLifeSection/24.JPG";
 import image25 from "../../assets/images/CityLifeSection/25.JPG";
 import image26 from "../../assets/images/CityLifeSection/26.JPG";
-import image27 from "../../assets/images/CityLifeSection/27.JPG";
+import image27 from "../../assets/images/CityLifeSection/27.jpg";
 import image28 from "../../assets/images/CityLifeSection/28.JPG";
 import image29 from "../../assets/images/CityLifeSection/29.JPG";
 
