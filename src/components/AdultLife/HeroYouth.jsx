@@ -5,72 +5,64 @@ import css from "../../css/AdultLife/HeroYouth.module.css";
 
 import img1 from "../../assets/images/AdultLife/1.jpg";
 import img2 from "../../assets/images/AdultLife/2.jpg";
-import img3 from "../../assets/images/AdultLife/3.jpg";
 import img4 from "../../assets/images/AdultLife/4.jpg";
 import img5 from "../../assets/images/AdultLife/5.jpg";
-import img6 from "../../assets/images/AdultLife/6.jpg";
 import img7 from "../../assets/images/AdultLife/7.jpg";
 import img8 from "../../assets/images/AdultLife/8.jpg";
 import img9 from "../../assets/images/AdultLife/9.jpg";
 import img10 from "../../assets/images/AdultLife/10.jpg";
-import img11 from "../../assets/images/AdultLife/11.jpg";
 import img12 from "../../assets/images/AdultLife/12.jpg";
-import img13 from "../../assets/images/AdultLife/3.jpg";
-import img14 from "../../assets/images/AdultLife/10.jpg";
-import img15 from "../../assets/images/AdultLife/13.jpg";
-import img16 from "../../assets/images/AdultLife/14.jpg";
-
+import img13 from "../../assets/images/AdultLife/13.JPEG";
+import img14 from "../../assets/images/AdultLife/14.JPG";
+import img15 from "../../assets/images/AdultLife/15.JPG";
+import img16 from "../../assets/images/AdultLife/16.JPG";
+import img17 from "../../assets/images/AdultLife/17.jpg";
+import img18 from "../../assets/images/AdultLife/18.JPG";
+import img19 from "../../assets/images/AdultLife/19.jpg";
+import img22 from "../../assets/images/AdultLife/22.jpg";
+import img23 from "../../assets/images/AdultLife/23.jpg";
+import img24 from "../../assets/images/AdultLife/24.jpg";
 const allImages = [
   // Збільшена кількість зображень для кращого ефекту безперервності
   img1,
   img2,
-  img3,
   img4,
   img5,
-  img6,
   img7,
   img8,
   img9,
   img10,
-  img11,
   img12,
   img13,
   img14,
   img15,
   img16,
+  img17,
+  img18,
+  img19,
+  img22,
+  img23,
+  img24,
   // Дублюємо зображення, щоб анімація була безперервною без видимого стрибка
-  img1,
-  img2,
-  img3,
-  img4,
-  img5,
-  img6,
-  img7,
-  img8,
-  img9,
-  img10,
-  img11,
-  img12,
   img13,
   img14,
   img15,
   img16,
+  img17,
+  img18,
+  img19,
+  img22,
+  img23,
+  img24,
   img1,
   img2,
-  img3,
   img4,
   img5,
-  img6,
   img7,
   img8,
   img9,
   img10,
-  img11,
   img12,
-  img13,
-  img14,
-  img15,
-  img16,
 ];
 
 const HeroYouth = () => {

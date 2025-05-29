@@ -177,10 +177,6 @@ export default function SeaTravel() {
 
   return (
     <section className={css.seaTravelSection}>
-      <motion.h2 className={css.sectionTitle} {...textAnimation}>
-        Великі зміни
-      </motion.h2>
-
       <div className={css.timeline}>
         {loveStoryEvents.map((event, index) => (
           <motion.div
@@ -190,9 +186,9 @@ export default function SeaTravel() {
             initial="initial"
             whileInView="animate"
           >
+            <h3 className={css.title}>{event.title}</h3>
             <div className={css.timelineContent}>
-              <h3>{event.title}</h3>
-              <p> {event.description} </p>
+              <p className={css.descriptionContent}> {event.description} </p>
               <div className={css.imageWrapper}>
                 <HoverSliderSea
                   images={event.images}

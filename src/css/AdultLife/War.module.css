@@ -4,3 +4,39 @@
   font-size: 35px;
   color: #fff;
 }
+.title {
+  font-size: 40px;
+}
+.titleText {
+  font-size: 25px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .warSection {
+    margin: 20px;
+  }
+  .title {
+    font-size: 35px;
+  }
+  .titleText {
+    font-size: 25px;
+  }
+  .Container {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
+@media (max-width: 767px) {
+  .warSection {
+    margin: 15px;
+  }
+  .title {
+    font-size: 25px;
+  }
+  .titleText {
+    font-size: 20px;
+  }
+  .Container {
+    padding: 10px;
+  }
+}

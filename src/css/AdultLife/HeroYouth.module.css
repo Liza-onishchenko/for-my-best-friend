@@ -100,3 +100,25 @@
   border-radius: 8px;
   margin: 0 auto;
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .imageRow {
+    gap: 20px;
+  }
+  .imageCard {
+    width: 300px;
+    height: 260px;
+  }
+}
+@media (max-width: 767px) {
+  .imageRow {
+    gap: 15px;
+  }
+  .imageCard {
+    width: 250px;
+    height: 200px;
+  }
+  .heroYouthSection {
+    height: 500px;
+  }
+}

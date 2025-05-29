@@ -17,8 +17,9 @@
   text-decoration: none;
   position: relative;
   transition: all 0.3s ease;
-  font-weight: 500;
+  font-weight: 750;
   font-size: 25px;
+  font-weight: 750;
   letter-spacing: 0.05em;
   text-align: center;
 }
@@ -46,4 +47,23 @@
 
 .styledLink:hover::after {
   width: 100%;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .nav {
+    padding: 1rem 20px;
+  }
+  .styledLink {
+    font-size: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .nav {
+    padding: 18px;
+  }
+  .styledLink {
+    font-size: 15px;
+  }
+  .styledLink {
+    font-weight: 650;
+  }
 }

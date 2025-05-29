@@ -1,5 +1,3 @@
-/* HeroSection.module.css */
-
 .section {
   display: flex;
   flex-direction: column;
@@ -10,15 +8,15 @@
   background-size: auto;
   background-blend-mode: normal; /* або overlay/soft-light — поекспериментуйте */
   text-align: center;
-  padding: 20px;
+  padding: 60px;
   min-height: 60vh;
   position: relative;
   overflow: hidden;
 }
 
 .title {
-  margin-top: 25x;
-  font-size: 2rem;
+  margin-top: 15px;
+  font-size: 3rem;
   color: #fff;
   font-family: "Monsieur La Doulaise";
   font-optical-sizing: auto;
@@ -26,25 +24,24 @@
 }
 
 .subtitle {
-  font-size: 1.5rem;
   color: #501028;
-  margin-bottom: 20px;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
 }
 
 .wishText {
-  font-size: 2em;
-  margin-bottom: 30px;
   color: #501028;
   font-family: "Monsieur La Doulaise";
-  padding-left: 15px;
-  padding-right: 15px;
   line-height: 1.5;
+  font-size: 3em;
+  margin-bottom: 50px;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 .surpriseButton {
-  margin-top: 60px;
+  font-size: 1.5em;
   padding: 10px 20px;
-  font-size: 1em;
   cursor: pointer;
   border: none;
   border-radius: 5px;
@@ -80,13 +77,12 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   position: relative; /* Для абсолютно позиціонованої кнопки закриття */
 }
-
 .heart {
-  font-size: 1.5em; /* Трохи менший розмір сердечка */
+  font-size: 2.5em; /* Збільшуємо на більших екранах, якщо потрібно */
 }
 
 .heartImage {
-  width: 60px; /* Ще менший розмір зображення сердечка */
+  width: 100px; /* Ще менший розмір зображення сердечка */
   height: auto;
 }
 
@@ -94,7 +90,7 @@
   margin-top: 10px;
   font-style: italic;
   color: #501028;
-  font-size: 1.2em;
+  font-size: 1.8em;
 }
 
 .closeButton {
@@ -115,24 +111,24 @@
 
 /* Медіа-запити для більших екранів (розміри шрифтів та відступи можна залишити як є або трохи скоригувати) */
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .section {
-    padding: 40px;
+    padding: 15px;
     min-height: 80vh;
   }
 
   .title {
-    font-size: 3rem;
+    font-size: 40px;
   }
 
   .subtitle {
-    font-size: 2rem;
-    margin-bottom: 40px;
+    font-size: 30px;
+    margin-bottom: 20px;
   }
 
   .wishText {
-    font-size: 2.5em;
-    margin-bottom: 40px;
+    font-size: 2em;
+    margin-bottom: 10px;
     padding-left: 40px;
     padding-right: 40px;
   }
@@ -140,6 +136,7 @@
   .surpriseButton {
     margin-top: 10px;
     font-size: 1.2em;
+    margin-bottom: 15px;
   }
 
   .heart {
@@ -154,44 +151,23 @@
     font-size: 1.5em;
   }
 }
-
-@media (min-width: 1024px) {
+@media (max-width: 767px) {
   .section {
-    padding: 60px;
+    padding: 15px;
+    min-height: 60vh;
   }
-
   .title {
-    margin-top: 15px;
-    font-size: 3rem;
+    font-size: 30px;
   }
-
   .subtitle {
-    font-size: 2.5rem;
-    margin-bottom: 50px;
+    font-size: 25px;
+    margin-bottom: 15px;
   }
-
   .wishText {
-    font-size: 3em;
-    margin-bottom: 50px;
-    padding-left: 60px;
-    padding-right: 60px;
-  }
-
-  .surpriseButton {
-    margin-top: 10px;
     font-size: 1.5em;
-  }
-
-  .heart {
-    font-size: 2.5em; /* Збільшуємо на більших екранах, якщо потрібно */
-  }
-
-  .heartImage {
-    width: 100px; /* Збільшуємо на більших екранах, якщо потрібно */
-  }
-
-  .surpriseText {
-    font-size: 1.8em;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 .covers-full-image {
@@ -335,22 +311,6 @@ body {
   box-shadow: 0 0 15px #ed3b44;
   border: 1px solid #ed3b44;
   color: #ed3b44;
-}
-
-@media screen and (min-width: 768px) {
-  .section-covers {
-    height: 960px;
-  }
-
-  .covers-list {
-    gap: 40px;
-    margin-bottom: 50px;
-  }
-
-  .cover-item {
-    width: 544px;
-    height: 314px;
-  }
 }
 
 @media screen and (min-width: 1440px) {

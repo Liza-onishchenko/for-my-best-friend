@@ -136,3 +136,39 @@
 .modalClose:hover {
   color: #eb0954;
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .schoolTraditionsSection {
+    padding: 20px 20px;
+  }
+
+  .sectionTitle {
+    font-size: 25px;
+  }
+  .card {
+    padding: 10px;
+    flex-direction: column;
+  }
+  .cardText {
+    margin-left: 15px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .schoolTraditionsSection {
+    padding: 10px 10px;
+  }
+  .sectionTitle {
+    font-size: 20px;
+  }
+  .card {
+    padding: 10px;
+    flex-direction: column;
+  }
+  .cardText {
+    margin-left: 10px;
+    font-size: 15px;
+  }
+  .galleryContainer {
+    width: auto;
+  }
+}

@@ -58,3 +58,44 @@
   object-fit: cover;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .friendshipDistanceSection {
+    padding: 20px;
+  }
+  .sectionTitle {
+    font-size: 30px;
+  }
+  .contentWrapper {
+    flex-direction: column;
+  }
+  .textContainer {
+    width: auto;
+    padding: 0;
+    font-size: 20px;
+  }
+  .galleryContainer {
+    width: auto;
+    margin: 0;
+  }
+}
+@media (max-width: 767px) {
+  .friendshipDistanceSection {
+    padding: 15px;
+  }
+  .sectionTitle {
+    font-size: 20px;
+    color: #eb0954;
+  }
+  .contentWrapper {
+    flex-direction: column;
+  }
+  .textContainer {
+    width: auto;
+    padding: 0;
+    font-size: 15px;
+  }
+  .galleryContainer {
+    width: auto;
+    margin: 0;
+  }
+}

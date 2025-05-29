@@ -7,11 +7,7 @@ import broom3 from "../../assets/images/FriendshipPage/CommonHobbiesSection/xGf0
 import Modal from "../layout/Modal.jsx";
 
 function CommonHobbiesSection() {
-  const photos = [
-    { src: broom1, caption: "Погляд, сповнений пригод" },
-    { src: broom2, caption: "Наші перші витівки — турнік + віник = музика :)" },
-    { src: broom3, caption: "Погляд, сповнений пригод" },
-  ];
+  const photos = [{ src: broom1 }, { src: broom2 }, { src: broom3 }];
   const loopedPhotos = [...photos, ...photos];
   const [activeImage, setActiveImage] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false); // Стан для видимості модального вікна

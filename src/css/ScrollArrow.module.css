@@ -1,7 +1,6 @@
 .scrollArrow {
   position: fixed;
   right: 20px;
-  bottom: 30px;
   background-color: white;
   color: #d81b60;
   border: none;
@@ -12,11 +11,19 @@
   z-index: 1000;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   transition: background-color 0.3s ease;
-  display: flex; /* Увімкнути flexbox для центрування */
-  justify-content: center; /* Центрувати вміст горизонтально */
-  align-items: center; /* Центрувати вміст вертикально */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .scrollArrow:hover {
   box-shadow: 0 0 20px #d30333;
+}
+
+.up {
+  bottom: 80px; /* трохи вище */
+}
+
+.down {
+  bottom: 20px;
 }

@@ -78,3 +78,5 @@
 .nextButton:hover {
   color: #fde3e5;
 }
+@media (max-width: 767px) {
+}

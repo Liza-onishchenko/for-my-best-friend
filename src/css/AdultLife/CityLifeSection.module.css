@@ -137,3 +137,42 @@
 .modalClose:hover {
   color: #eb0954;
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .cityLifeSectionSection {
+    padding: 25px;
+  }
+  .sectionTitle {
+    font-size: 30px;
+  }
+  .card {
+    flex-direction: column;
+    padding: 35px;
+  }
+  .cardText {
+    width: auto;
+    margin: 0;
+  }
+  .galleryContainer {
+    width: auto;
+  }
+}
+@media (max-width: 767px) {
+  .cityLifeSectionSection {
+    padding: 15px;
+  }
+  .sectionTitle {
+    font-size: 20px;
+  }
+  .card {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .cardText {
+    width: auto;
+    margin: 0;
+    font-size: 18px;
+  }
+  .galleryContainer {
+    width: auto;
+  }
+}

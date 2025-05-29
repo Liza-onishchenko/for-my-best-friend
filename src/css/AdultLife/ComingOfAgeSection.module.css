@@ -50,9 +50,7 @@
   justify-content: center;
   align-items: center;
 }
-.container {
-  ma: 20px;
-}
+
 .titleVidstan {
   font-size: 2em;
   margin-bottom: 30px;
@@ -62,7 +60,7 @@
   font-size: 35px;
   line-height: 1.7;
 }
-@media (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .timeline {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   }
@@ -73,14 +71,18 @@
 }
 
 /* --- MOBILE --- */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+  .comingOfAgeSection {
+    padding: 15px;
+  }
   .timeline {
     grid-template-columns: 1fr;
     gap: 20px;
   }
 
   .sectionTitle {
-    font-size: 1.5em;
+    font-size: 1.1em;
+    margin-bottom: 10px;
   }
 
   .timelineYear {
