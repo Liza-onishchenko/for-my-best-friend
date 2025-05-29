@@ -13,7 +13,7 @@ import img9 from "../../assets/images/AdultLife/9.jpg";
 import img10 from "../../assets/images/AdultLife/10.jpg";
 import img12 from "../../assets/images/AdultLife/12.jpg";
 import img13 from "../../assets/images/AdultLife/13.JPEG";
-import img14 from "../../assets/images/AdultLife/14.JPG";
+import img14 from "../../assets/images/AdultLife/14.jpg";
 import img15 from "../../assets/images/AdultLife/15.JPG";
 import img16 from "../../assets/images/AdultLife/16.JPG";
 import img17 from "../../assets/images/AdultLife/17.jpg";
